@@ -9,7 +9,7 @@ package toi.drawing.shapes;
  * 
  */
 public class Rectangle extends Shape {
-	/** Coordonn�es du coin sup�rieur gauche */
+	/** Coordonn�es du coin sup�rieur gauche. */
 	private Point upLeft;
 
 	/** Coordonn�es du coin inf�rieur droit */
@@ -24,8 +24,7 @@ public class Rectangle extends Shape {
 	 *            Le coin inf�rieur droit.
 	 */
 	public Rectangle(Point upLeft, Point downRight) {
-		assert upLeft.getX() <= downRight.getX()
-				&& upLeft.getY() >= downRight.getY();
+		assert upLeft.getX() <= downRight.getX() && upLeft.getY() >= downRight.getY();
 		this.upLeft = upLeft;
 		this.downRight = downRight;
 	}
