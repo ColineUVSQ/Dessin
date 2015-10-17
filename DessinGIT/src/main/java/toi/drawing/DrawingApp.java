@@ -53,10 +53,12 @@ public enum DrawingApp {
 		log.trace(shapes);
 	}
 
-	/*
-	 * public void translate(List<Shape> shapes) { for (Shape s : shapes) {
-	 * s.translate(2.0, 3.0); }
-	 */
+	public void translate(List<Shape> shapes) {
+		for (Shape s : shapes) {
+
+			s.translate(2.0, 3.0);
+		}
+	}
 
 	public static void main(String[] args) {
 		ENVIRONNEMENT.run(args);
